@@ -47,21 +47,21 @@ git add -A && git commit -m "init flux" && git push
 
 ## Create a Helm Release resource file in clusters/my-clusters path. The filename could be nginx-helm-release.yaml. The contents are as folows:
 
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: nginx
-  namespace: default
-spec:
-  interval: 1m
-  chart:
+    apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    metadata:
+    name: nginx
+    namespace: default
     spec:
-      chart: ./charts/nginx
-      sourceRef:
-        kind: GitRepository
-        name: flux-system
-        namespace: flux-system
-      interval: 1m  
+    interval: 1m
+    chart:
+        spec:
+        chart: ./charts/nginx
+        sourceRef:
+            kind: GitRepository
+            name: flux-system
+            namespace: flux-system
+        interval: 1m  
 
 ## Force Flux CD to do a reconciliation by running the following command:
 

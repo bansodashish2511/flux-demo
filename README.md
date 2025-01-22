@@ -7,11 +7,11 @@
     clusters/my-cluster/flux-system/kustomization.yaml
 ## Update the kustomization.yaml 
 
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- gotk-components.yaml
-- gotk-sync.yaml
+ apiVersion: kustomize.config.k8s.io/v1beta1
+ kind: Kustomization
+ resources:
+ - gotk-components.yaml
+ - gotk-sync.yaml
 
 ## Ran the given command:      
 git add -A && git commit -m "init flux" && git push

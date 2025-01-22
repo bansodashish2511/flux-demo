@@ -62,3 +62,11 @@ spec:
         name: flux-system
         namespace: flux-system
       interval: 1m  
+
+## Force Flux CD to do a reconciliation by running the following command:
+
+    flux reconcile kustomization flux-system --with-source
+
+## Observe the Helm Release resource and the pods:
+    kubectl get helmrelease
+    kubectl get pods

@@ -1,6 +1,7 @@
 # flux-demo
 ## Ran the given commands:
  mkdir -p clusters/my-cluster/flux-system
+ 
  touch clusters/my-cluster/flux-system/gotk-components.yaml \
     clusters/my-cluster/flux-system/gotk-sync.yaml \
     clusters/my-cluster/flux-system/kustomization.yaml

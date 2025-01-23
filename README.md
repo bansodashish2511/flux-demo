@@ -1,4 +1,4 @@
-# flux-demo
+# Deploying Flux on a KIND Cluster for Kubernetes Application Management
 ## Ran the given commands:
  mkdir -p clusters/my-cluster/flux-system
  
